@@ -1,12 +1,12 @@
 body{
 	font-family: 'Roboto Slab', serif;
 	background: #e9e4e6;
-
 }
 
 ul{
 	list-style-type:none;
 }
+
 h1 {
 	color: black;
 }
@@ -37,6 +37,7 @@ li, p{
 	margin:	0 auto;
 	border-radius: 50%;
 }
+
 .col-left{
 	float: left;
 	width: 	30%;	
@@ -56,8 +57,8 @@ li, p{
 
 .portfolio img{
 	width: 20%;
-
 }
+
 .bio a{
 	text-decoration: none;
 	font-size: 20px;
@@ -71,6 +72,7 @@ li, p{
 	background:	#f6f5f5;
 	border-radius: 10px;
 }
+
 .bloque li{
 	padding-bottom: 5px;
 	padding-top: 5px;
@@ -85,6 +87,5 @@ li, p{
 .conocimientos ul {
 	display: grid;
 	grid-gap: 15px;
-	grid-template-columns: repeat(4, 120px);
-	
+	grid-template-columns: repeat(4, 120px);	
 }
