@@ -1,0 +1,90 @@
+body{
+	font-family: 'Roboto Slab', serif;
+	background: #e9e4e6;
+
+}
+
+ul{
+	list-style-type:none;
+}
+h1 {
+	color: black;
+}
+.col-right h2{
+	border-bottom: 2px solid ;
+}
+
+.principal li{
+	border-bottom: 2px dotted;
+}
+
+h2, h3{
+	color: #3bb4c1;
+}
+
+li, p{
+	color: #048998;
+}
+
+.bio{
+	margin: 20px auto;
+	
+}
+
+.bio img{
+	width: 80%;
+	display: block;
+	margin:	0 auto;
+	border-radius: 50%;
+}
+.col-left{
+	float: left;
+	width: 	30%;	
+}
+
+.col-right{
+	float: left;
+	width: 	70%;
+}
+
+.bloque{
+	background: #f6f5f5;
+	padding: 10px 30px; 
+	margin: 20px;
+	border-radius: 10px;		
+}
+
+.portfolio img{
+	width: 20%;
+
+}
+.bio a{
+	text-decoration: none;
+	font-size: 20px;
+	color: grey;
+}
+
+.bio li{
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 80%;
+	background:	#f6f5f5;
+	border-radius: 10px;
+}
+.bloque li{
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.conocimientos li {
+	border: solid 2px;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.conocimientos ul {
+	display: grid;
+	grid-gap: 15px;
+	grid-template-columns: repeat(4, 120px);
+	
+}
