@@ -1,6 +1,7 @@
 body{
+	letter-spacing: 1.5px;
 	font-family: 'Roboto Slab', serif;
-	background: #e9e4e6;
+	background: #fafafa;
 }
 
 ul{
@@ -9,22 +10,19 @@ ul{
 
 h1 {
 	color: black;
+	font-size: 3rem;
 }
 
 .col-right h2{
 	border-bottom: 2px solid ;
 }
 
-.principal li{
-	border-bottom: 2px dotted;
-}
-
-h2, h3{
-	color: #3bb4c1;
+h2, h3, h6{
+	color: #07689f;
 }
 
 li, p{
-	color: #048998;
+	color: #07689f;
 }
 
 .bio{
@@ -32,27 +30,39 @@ li, p{
 }
 
 .bio img{
-	width: 80%;
+	width: 40%;
 	display: block;
 	margin:	0 auto;
 	border-radius: 50%;
 }
 
 .col-left{
+	position: fixed;
+	top: 0;
+	background:#ff7e67;
 	float: left;
-	width: 	30%;	
+	width: 	25%;
+	height: 100%;
+	margin:-8px;	
 }
 
 .col-right{
-	float: left;
-	width: 	70%;
+	float: right;
+    width: 67%;
+    background: #fafafa;
+    margin-left: 8px;
+    margin-top: -9px;
+    margin-right: 5px;
+    padding: 46px;
+}
+
+.surname {
+	color: #ff7e67;
 }
 
 .bloque{
-	background: #f6f5f5;
 	padding: 10px 30px; 
 	margin: 20px;
-	border-radius: 10px;		
 }
 
 .portfolio img{
@@ -61,16 +71,14 @@ li, p{
 
 .bio a{
 	text-decoration: none;
-	font-size: 20px;
-	color: grey;
+	font-size: 30px;
+	color: #07689f;
 }
 
 .bio li{
 	padding: 10px;
 	margin-bottom: 10px;
 	width: 80%;
-	background:	#f6f5f5;
-	border-radius: 10px;
 }
 
 .bloque li{
@@ -87,5 +95,32 @@ li, p{
 .conocimientos ul {
 	display: grid;
 	grid-gap: 15px;
-	grid-template-columns: repeat(4, 120px);	
+	grid-template-columns: repeat(4, 120px);
+}
+
+.fab fa-html5 {
+	size: 5x;
+}
+
+.icon {
+	padding-right: 45px;
+}
+
+@media only screen and (max-width: 1129px) {
+	.col-left {
+		display: block;
+	}
+	.col-right {
+		width: 58%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.col-left {
+		display: none;
+	}
+	
+	.col-right {
+		width: 50%;
+	}
 }
