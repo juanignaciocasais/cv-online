@@ -144,26 +144,34 @@ p {
     display: none;
   }
   .col-right {
+    float: none;
     width: auto;
+    margin-left: inherit;
+    margin-top: inherit;
+    margin-right: inherit;
+    padding: inherit;
   }
  .mobile-container {
 	background-color: #0b486b;
 	display: block;
+  }
+  .conocimientos ul {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 120px);
   }
 
 }
 @media only screen and (max-width: 750px) {
-  .col-left {
-    display: none;
-  }
   .col-right {
     width: 90%;
   }
  .mobile-container {
-	background-color: #0b486b;
 	display: block;
+  } 
+  .proyectos img {
+    width: 20%;
   }
-
 }
 
 .mobile-container {
@@ -209,4 +217,4 @@ p {
   .active {
 	background-color: #0b486b;
 	color: white;
-  }
+  }*/
