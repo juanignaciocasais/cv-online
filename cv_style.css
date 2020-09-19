@@ -1,126 +1,212 @@
-body{
-	letter-spacing: 1.5px;
-	font-family: 'Roboto Slab', serif;
-	background: #fafafa;
+body {
+  letter-spacing: 1.5px;
+  font-family: "Roboto Slab", serif;
+  background: #ffffff;
 }
 
-ul{
-	list-style-type:none;
+.info{
+	font-size: 1.1rem;
+	color: #555f5f;
+}
+
+.gmail{
+	text-decoration: none;
+}
+
+.gmail:hover{
+	text-decoration: underline;
+}
+
+
+ul {
+  list-style-type: none;
 }
 
 h1 {
-	color: black;
-	font-size: 3rem;
+  color: black;
+  font-size: 3rem;
 }
 
-.col-right h2{
-	border-bottom: 2px solid ;
+.col-right h2 {
+  border-bottom: 2px solid;
 }
 
-h2, h3, h6{
-	color: #07689f;
+h2,
+h3,
+h6 {
+  color: #0b486b;
 }
 
-li, p{
-	color: #07689f;
+li,
+p {
+  color: #6f7c7c;
 }
 
-.bio{
-	margin: 20px auto;
+.bio {
+  margin: 20px auto;
 }
 
-.bio img{
-	width: 40%;
-	display: block;
-	margin:	0 auto;
-	border-radius: 50%;
+.bio img {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
 }
 
-.col-left{
-	position: fixed;
-	top: 0;
-	background:#ff7e67;
-	float: left;
-	width: 	25%;
-	height: 100%;
-	margin:-8px;	
+.col-left {
+  position: fixed;
+  top: 0;
+  background: #0b486b;
+  float: left;
+  width: 25%;
+  height: 100%;
+  margin: -8px;
 }
 
-.col-right{
-	float: right;
-    width: 67%;
-    background: #fafafa;
-    margin-left: 8px;
-    margin-top: -9px;
-    margin-right: 5px;
-    padding: 46px;
+.col-right {
+  float: right;
+  width: 67%;
+  background: #ffffff;
+  margin-left: 8px;
+  margin-top: -9px;
+  margin-right: 5px;
+  padding: 46px;
 }
 
 .surname {
-	color: #ff7e67;
+  color: #ff7e67;
 }
 
-.bloque{
-	padding: 10px 30px; 
-	margin: 20px;
+.bloque {
+  padding: 10px 30px;
+  margin: 18px;
 }
 
-.portfolio img{
-	width: 20%;
+.proyectos img {
+  width: 20%;
 }
 
-.bio a{
-	text-decoration: none;
-	font-size: 30px;
-	color: #07689f;
+.bio a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
 }
 
-.bio li{
-	padding: 10px;
-	margin-bottom: 10px;
-	width: 80%;
+.bio li {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 80%;
 }
 
-.bloque li{
-	padding-bottom: 5px;
-	padding-top: 5px;
+.bloque li {
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .conocimientos li {
-	border: solid 2px;
-	border-radius: 15px;
-	text-align: center;
+  border: solid 2px;
+  border-radius: 15px;
+  text-align: center;
 }
 
 .conocimientos ul {
-	display: grid;
-	grid-gap: 15px;
-	grid-template-columns: repeat(4, 120px);
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, 120px);
 }
 
 .fab fa-html5 {
-	size: 5x;
+  size: 5x;
 }
 
-.icon {
-	padding-right: 45px;
+.grid-container {
+  display: grid;
+  grid-template-columns: 10% auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: left;
+  padding: 20px 0;
+}
+
+.text {
+	color: #6f7c7c;
+}
+
+.mobile-container {
+	display: none;
 }
 
 @media only screen and (max-width: 1129px) {
-	.col-left {
-		display: block;
-	}
-	.col-right {
-		width: 58%;
-	}
+  .col-left {
+    display: none;
+  }
+  .col-right {
+    width: auto;
+  }
+ .mobile-container {
+	background-color: #0b486b;
+	display: block;
+  }
+
+}
+@media only screen and (max-width: 750px) {
+  .col-left {
+    display: none;
+  }
+  .col-right {
+    width: 90%;
+  }
+ .mobile-container {
+	background-color: #0b486b;
+	display: block;
+  }
+
 }
 
-@media only screen and (max-width: 800px) {
-	.col-left {
-		display: none;
-	}
-	
-	.col-right {
-		width: 50%;
-	}
-}
+.mobile-container {
+	margin: auto;
+	color: white;
+  border-radius: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  }
+  
+  .topnav {
+	overflow: hidden;
+	background-color: #333;
+
+  }
+  
+  .topnav #myLinks {
+	display: none;
+  }
+  
+  .topnav a {
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
+  }
+  
+  .topnav a.icon {
+	background: black;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+  }
+  
+  .topnav a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  .active {
+	background-color: #0b486b;
+	color: white;
+  }
