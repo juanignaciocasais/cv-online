@@ -4,19 +4,18 @@ body {
   background: #ffffff;
 }
 
-.info{
-	font-size: 1.1rem;
-	color: #555f5f;
+.info {
+  font-size: 1.1rem;
+  color: #555f5f;
 }
 
-.gmail{
-	text-decoration: none;
+.gmail {
+  text-decoration: none;
 }
 
-.gmail:hover{
-	text-decoration: underline;
+.gmail:hover {
+  text-decoration: underline;
 }
-
 
 ul {
   list-style-type: none;
@@ -103,12 +102,6 @@ p {
   padding-top: 5px;
 }
 
-.conocimientos li {
-  border: solid 2px;
-  border-radius: 15px;
-  text-align: center;
-}
-
 .conocimientos ul {
   display: grid;
   grid-gap: 15px;
@@ -132,14 +125,17 @@ p {
 }
 
 .text {
-	color: #6f7c7c;
+  color: #6f7c7c;
 }
 
 .mobile-container {
-	display: none;
+  display: none;
 }
 
 @media only screen and (max-width: 1129px) {
+  .bloque {
+    padding: inherit;
+  }
   .col-left {
     display: none;
   }
@@ -151,70 +147,69 @@ p {
     margin-right: inherit;
     padding: inherit;
   }
- .mobile-container {
-	background-color: #0b486b;
-	display: block;
+  .mobile-container {
+    background-color: #0b486b;
+    display: block;
   }
   .conocimientos ul {
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 12px;
     grid-template-columns: repeat(3, 120px);
   }
-
 }
 @media only screen and (max-width: 750px) {
+  .grid-container {
+    grid-gap: 45px;
+    padding: inherit;
+  }
   .col-right {
     width: 90%;
   }
- .mobile-container {
-	display: block;
-  } 
+  .mobile-container {
+    display: block;
+  }
   .proyectos img {
     width: 20%;
   }
-}
 
-.mobile-container {
-	margin: auto;
-	color: white;
-  border-radius: 10px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  .mobile-container {
+    margin: auto;
+    color: white;
+    border-radius: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
-  
+
   .topnav {
-	overflow: hidden;
-	background-color: #333;
+    overflow: hidden;
+    background-color: #0b486b;
+  }
 
-  }
-  
   .topnav #myLinks {
-	display: none;
+    display: none;
   }
-  
+
   .topnav a {
-	color: white;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-	display: block;
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 8px;
   }
-  
-  .topnav a.icon {
-	background: black;
-	display: block;
-	position: absolute;
-	right: 0;
-	top: 0;
+
+  .topnav a.icon,
+  .fa fa-bars {
+    float: right;
   }
-  
+
   .topnav a:hover {
-	background-color: #ddd;
-	color: black;
+    background-color: #ddd;
+    color: black;
   }
-  
+
   .active {
-	background-color: #0b486b;
-	color: white;
+    background-color: #0b486b;
+    color: white;
   }
+}
