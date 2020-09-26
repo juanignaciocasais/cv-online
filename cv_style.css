@@ -157,19 +157,18 @@ p {
     grid-template-columns: repeat(3, 120px);
   }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
+  body {
+    width: fit-content;
+  }
+  
   .grid-container {
     grid-gap: 45px;
     padding: inherit;
   }
-  .col-right {
-    width: 90%;
-  }
+
   .mobile-container {
     display: block;
-  }
-  .proyectos img {
-    width: 20%;
   }
 
   .mobile-container {
@@ -193,9 +192,9 @@ p {
   .topnav a {
     float: left;
     color: white;
-    padding: 14px 16px;
+    padding: 12px 6px;
     text-decoration: none;
-    font-size: 8px;
+    font-size: 9px;
   }
 
   .topnav a.icon,
